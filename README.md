@@ -2,7 +2,7 @@
 
 ## Description 
 
-### [Deployed Link]().
+### [Deployed Link](https://maverickwong17.github.io/password-generator/).
 
 This is a password generator that prompts the user for certain criteria. Those criteria include character length as well as whether or not to include certain character sets. The sets are uppercase, lowercase, numbers, and special characters.
 
@@ -26,7 +26,15 @@ To use, click the generate passwords button. Answer the prompt for how many char
 
 ![alt text](assets/images/demo.gif)
 
+There is also code for data validation. If the password length is less than 8 or more than 128, the following error shows up.
 
+![alt text](assets/images/screenshot.png)
+
+This alert is shown in a while loop that reprompts with a break if you cancel.
+
+![alt text](assets/images/Screenshot2.png)
+
+There is also validation for if you do not include any data set.
 
 ## Credits
 

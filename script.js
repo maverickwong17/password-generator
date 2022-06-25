@@ -47,21 +47,38 @@ if (passlength == null){
       alert("You need to include at least one condition");
     } 
   }
+  // var pw = []
 
+  // if (uppercon) {
+  //   pw = pw.concat(characters.upperCase);
+  // }
+  // if (lowercon){
+  //   pw = pw.concat(characters.lowerCase);
+  // }
+  // if (numcon){
+  //   pw = pw.concat(characters.number);
+  // }
+  // if (specialcon){
+  //   pw = pw.concat(characters.specialCase);
+  // }
+  
+  // var complete = ""
+  
+  // for (var i=0; i < passlength; i++){
+  //   complete = complete + pw[Math.floor(Math.random() *pw.length)]
+  // }
+  
+  // return complete;
+  // }
 console.log(uppercon);
 console.log(lowercon);
 console.log(numcon);
 console.log(specialcon);
-
 var conArr = [uppercon , lowercon , numcon , specialcon]
 
 var useArr = Object.keys(characters);
 
 console.log(useArr);
-for (var i = 0; i < useArr.length - 1;i++){
-  console.log(useArr[i])
-}
-
 
 for (var i = useArr.length - 1; i >= 0; i--){
   if (conArr[i] == 0){
@@ -70,11 +87,12 @@ for (var i = useArr.length - 1; i >= 0; i--){
 }
 
 console.log(useArr);
-console.log(useArr[0][0]);
-
 var complete = ""
+
 for (var i=0; i < passlength; i++){
-  var pending = useArr[Math.floor(Math.random() *useArr.length)];
+  var accessArr = useArr[Math.floor(Math.random() *useArr.length)];
+  var pending = accessArr[Math.floor(Math.random() *accessArr.length)];
+  console.log(accessArr);
   console.log(pending);
   complete = complete + pending;
   console.log(complete);
